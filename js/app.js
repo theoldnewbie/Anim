@@ -4,13 +4,13 @@ var x = document.getElementById('x');
 function goRight() {
       setInterval(function(){
       setInterval(function(){
-      	if (tick >=10) {
+      	if (tick >=15) {
                   return false;
             };
       	left +=1.5;
             tick++;
       	anim.style.left = left + 'px';
-      },188)
+      },100)
             if(left >= 300){
                   // anim.style.left = 0 +'px';
                   // x.setAttribute("visibility","hidden");
@@ -20,7 +20,7 @@ function goRight() {
                   return false;
             };
             tick =0;
-      },1883);
+      },2000);
     };
 
 goRight();
